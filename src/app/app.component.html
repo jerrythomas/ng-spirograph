@@ -1,0 +1,18 @@
+<app-spirograph #canvas [pen_dist]="pen_distance" [pen_radius]="inner_radius"></app-spirograph>
+<div class="input">
+<label>Inner Radius</label>
+<mat-slider
+  thumbLabel
+  tickInterval="1"
+  min="10"
+  max="200"
+  [(ngModel)]="inner_radius"></mat-slider>
+<label>Distance of pen from center</label>
+<mat-slider
+  thumbLabel
+  [displayWith]="formatLabel"
+  [tickInterval]=".05"
+  [min]="inner_radius*.1"
+  [max]="inner_radius*1.4"
+  [(ngModel)]="pen_distance"></mat-slider>
+</div> 

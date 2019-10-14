@@ -1,0 +1,13 @@
+circle {
+  fill: aquamarine;
+}
+.old {
+    stroke: lightgrey;
+    stroke-dasharray: 5;
+    stroke-dashoffset: 5;
+}
+
+svg {
+  width:100vh;
+  height:100vh;
+}
